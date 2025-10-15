@@ -13,67 +13,67 @@
   @if (hasError){
     <div class="message error">
       <h3>🚫 Mot Inconnu... ou alors c'est de l'argot extraterrestre ? 🫠</h3>
-      <p>Ce mot n'existe pas dans mon dictionnaire cosmique ! Essaie un mot plus terre-à-terre, comme 'chat' ou 'ordinateur'. Peut-être que c'est une faute de frappe ? Vérifie et retente ta chance ! 😅</p>
+
     </div>
   } @else if (myResultDistance === 0){
     <div class="message neutral">
       <h3>🤷‍♂️ Rien du Tout... Zéro Pointé !</h3>
-      <p>Comme si tu avais lancé une flèche dans le vide intersidéral. Aucun lien détecté ! Mais ne te décourage pas, c'est le début de l'aventure. Essaie un synonyme ou un mot associé. Qui sait, peut-être que 'éléphant' est plus proche que tu ne le penses ? 🐘</p>
+
     </div>
   } @else if (myResultDistance < 0.10){
     <div class="message cold">
       <h3>🥶 Glacial ! Tu es à des Années-Lumière !</h3>
-      <p>Franchement, c'est comme comparer une banane à un moteur de fusée. Aucun rapport ! Mais hey, même les plus grands inventeurs ont commencé par des idées farfelues. Creuse plus profond dans ton vocabulaire, pense à des concepts abstraits ou concrets. Peut-être que le mot mystère est lié à la nature, à la technologie, ou à un sentiment ? 🌌❄️</p>
+
     </div>
   } @else if (myResultDistance < 0.20){
     <div class="message cold">
       <h3>❄️ Très Froid, Presque Gelé !</h3>
-      <p>Il y a un minuscule fil ténu, mais c'est comme chercher une aiguille dans une botte de foin... en Antarctique ! Pas de panique, chaque tentative t'apprend quelque chose. Essaie des mots de la même famille ou des antonymes. Imagine un puzzle géant : chaque pièce compte ! 🧩🥶</p>
+
     </div>
   } @else if (myResultDistance < 0.30){
     <div class="message chilly">
       <h3>🌬️ Frais, Mais Pas Encore Chaud !</h3>
-      <p>Un petit pas pour l'homme, un grand pas pour ton cerveau ! Il y a une connexion lointaine, comme un cousin au troisième degré. Continue à explorer : pense à des métaphores, des symboles ou des idées connexes. Peut-être que le mot est 'amour' et tu as dit 'chocolat' ? 😏🍫</p>
+
     </div>
   } @else if (myResultDistance < 0.40){
     <div class="message mild">
       <h3>😕 Mouais... Ça Chauffe un Peu !</h3>
-      <p>Pas mal, mais pas wow non plus. C'est comme si tu avais deviné la couleur du cheval blanc d'Henri IV, mais pas le nom. Il y a du potentiel ! Essaie des variations : pluriel, adjectif, verbe. Le mot mystère pourrait être juste à côté. Pense à des thèmes comme le voyage, la nourriture ou les émotions. 🚀🥱</p>
+
     </div>
   } @else if (myResultDistance < 0.50){
     <div class="message mild">
       <h3>🤔 Intéressant, Mais Encore Loin !</h3>
-      <p>Tu commences à toucher du doigt quelque chose. Comme un détective qui trouve une empreinte, mais pas le coupable. Bonne intuition ! Maintenant, affine : utilise des mots plus précis ou des concepts similaires. Peut-être que c'est lié à la musique, au sport ou à la science ? 🎶🏀🔬</p>
+
     </div>
   } @else if (myResultDistance < 0.60){
     <div class="message warm">
       <h3>🔥 Ça Chauffe Sérieusement !</h3>
-      <p>Wow, tu es sur la bonne voie ! C'est comme si tu avais trouvé la moitié du trésor. Le mot mystère est probablement dans la même catégorie ou domaine. Pense à des associations : si c'est 'océan', 'mer' est proche, mais pas assez. Continue, tu es presque là ! 🌊💥</p>
+
     </div>
   } @else if (myResultDistance < 0.70){
     <div class="message warm">
       <h3>😳 Tu Tiens Vraiment un Truc !</h3>
-      <p>Incroyable ! La similarité grimpe, et ton flair aussi. C'est comme si tu avais résolu une énigme compliquée. Le mot est peut-être un synonyme caché ou une idée voisine. Essaie des mots plus abstraits ou concrets selon le contexte. Tu es un génie en herbe ! 🧠✨</p>
+
     </div>
   } @else if (myResultDistance < 0.80){
     <div class="message hot">
       <h3>🚀 Si Proche du But, Ça Brûle !</h3>
-      <p>Presque, presque ! Tu es à un cheveu de la victoire. Comme un sprinteur à quelques mètres de la ligne d'arrivée. Le mot mystère est là, tout près. Pense à des nuances : peut-être un mot plus poétique ou technique. Ne lâche pas, la gloire t'attend ! 🏁🔥</p>
+
     </div>
   } @else if (myResultDistance < 0.90){
     <div class="message hot">
       <h3>💥 Ultra Proche, Le Feu Est Là !</h3>
-      <p>Oh mon dieu, c'est énorme ! Tu as presque trouvé. C'est comme si tu avais assemblé 99% du puzzle. Un dernier effort : essaie des mots très similaires ou des variantes orthographiques. Le mot mystère est probablement un classique ou un mot du quotidien. Vas-y, tu peux le faire ! 🎯🌟</p>
+
     </div>
   } @else if (myResultDistance < 1){
     <div class="message boiling">
       <h3>🌋 À Deux Doigts de l'Explosion !</h3>
-      <p>Incroyable proximité ! Tu es si près que ça en devient frustrant... dans le bon sens ! Le mot est là, juste derrière le voile. Pense à des homonymes ou des mots presque identiques. Peut-être une faute d'orthographe mineure ? La victoire est imminente ! 🎉💣</p>
+      
     </div>
   } @else {
     <div class="message victory">
       <h3>🎊 FÉLICITATIONS, CHAMPION ! TU AS GAGNÉ ! 🎊</h3>
-      <p>BOOM ! Tu as trouvé le mot mystère ! C'est une victoire éclatante, comme un feu d'artifice dans le ciel nocturne. Ton cerveau est une machine à penser incroyable. Prêt pour un nouveau défi ? Le prochain mot sera encore plus coriace ! 🏆🥳</p>
+      
     </div>
   }
 </div>
